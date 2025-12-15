@@ -3,42 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Akpobasa - Portfolio</title>
-  <!-- Link to our CSS -->
+  <title>Prince - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Icons from Font Awesome (for skills and contact) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <!-- Header with Navigation -->
   <header>
     <div class="container">
-      <h1>Prince Akpobasa</h1>
+      <h1>Prince</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- Dark Mode Toggle (we'll make this work later) -->
-      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi! I'm [Prince Akpobasa]. I'm learning web development and loving every bit of it!</p>
-      <p>This is my personal portfolio — welcome! 🚀</p>
-    </section>
+  <!-- Hero / About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi! I'm Prince, an aspiring web developer passionate about building fun and useful things with code.</p>
+          <p>I'm currently mastering HTML, CSS, JavaScript, and Node.js. I love creating projects that solve problems or bring a smile — like my Motivational Message Generator!</p>
+          <p>When I'm not coding, I enjoy learning new technologies, solving challenges, and dreaming up my next project.</p>
+        </div>
+        <div class="about-image">
+          <!-- Placeholder for your photo/avatar -->
+          <img src="https://via.placeholder.com/300" alt="Prince's photo">
+          <!-- Replace the URL above with your real photo later! -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- More sections will go here -->
-  </main>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: Your Motivational Generator -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Motivational Message Generator screenshot">
+          <h3>Motivational Message Generator</h3>
+          <p>A fun Node.js program that generates random uplifting messages with ASCII art every time you run it.</p>
+          <p class="tech">Built with: JavaScript (Node.js), Git</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Live Demo</a>
+            <a href="#" target="_blank">GitHub</a>
+            <!-- Replace # with real links later -->
+          </div>
+        </div>
 
+        <!-- Project 2: Placeholder -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Coming soon">
+          <h3>Project Two</h3>
+          <p>Coming soon — stay tuned!</p>
+          <p class="tech">Technologies: TBD</p>
+        </div>
+
+        <!-- Project 3: Placeholder -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Coming soon">
+          <h3>Project Three</h3>
+          <p>Coming soon — stay tuned!</p>
+          <p class="tech">Technologies: TBD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-icons">
+        <i class="fab fa-html5" title="HTML5"></i>
+        <i class="fab fa-css3-alt" title="CSS3"></i>
+        <i class="fab fa-js-square" title="JavaScript"></i>
+        <i class="fab fa-node-js" title="Node.js"></i>
+        <i class="fab fa-git-alt" title="Git"></i>
+        <i class="fab fa-github" title="GitHub"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Have an interesting project or opportunity? I'd love to hear from you!</p>
+      <div class="contact-links">
+        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Made with ❤️ by [Prince Akpobasa] - 2025</p>
+    <div class="container">
+      <p>Made with ❤️ by Prince — 2025</p>
+    </div>
   </footer>
 
-  <!-- Link to our JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
